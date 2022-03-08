@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "robotframework-lsp",
+            "name": "Debug all tests",
+            "target": "${cwd}/atest",
+            "request": "launch",
+            "terminal": "integrated",
+            "env": {"PWDEBUG": 1},
+            "args": ["-d", "${cwd}/results"]
+        },
+        {
+            "type": "robotframework-lsp",
+            "name": "Debug current file",
+            "target": "${file}",
+            "request": "launch",
+            "terminal": "integrated",
+            "env": {"PWDEBUG": 1},
+            "args": ["-d", "${cwd}/results"]
+        },
+        {
+            "type": "robotframework-lsp",
+            "name": "Robot Framework: Launch template",
+            "request": "launch",
+            "terminal": "integrated",
+            "args": ["-d", "${cwd}/results"]
+        }
+    ]
+}
