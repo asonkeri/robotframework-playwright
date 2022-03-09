@@ -5,7 +5,6 @@ Library           Browser
 ${BROWSER}        chromium
 ${HEADLESS}       true
 ${BASE URL}       https://playwright.dev
-${theme toggle}    css=nav >> div:has(input[type="checkbox"]) >> div[role="button"]
 
 *** Keywords ***
 Open New Browser
